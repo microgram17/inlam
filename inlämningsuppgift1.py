@@ -15,4 +15,5 @@ for i in range (0, len(text)): #for loop som itererar för varje element i strä
     else:
         rövartext = rövartext + text[i] #ifall det inte är en konsonant, så läggs elementet till vanligt till "rövartext"
         
-print (rövartext)
+with open("rövartext.txt", mode="w", encoding="utf-8") as nytextfil:
+    nytextfil = nytextfil.write(rövartext)
